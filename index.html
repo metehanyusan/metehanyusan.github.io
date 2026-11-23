@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d1117" id="themeColor">
+
+  <title data-tr="Metehan Yuşan | Bilgisayar Mühendisi" data-en="Metehan Yuşan | Computer Engineer">Metehan Yuşan | Bilgisayar Mühendisi</title>
+  <meta name="description"
+        content="Metehan Yuşan - Bilgisayar Mühendisi. Mobil ve web projeleri, Kut Labs uygulamaları, notlar ve teknik yazılar."
+        data-tr-content="Metehan Yuşan - Bilgisayar Mühendisi. Mobil ve web projeleri, Kut Labs uygulamaları, notlar ve teknik yazılar."
+        data-en-content="Metehan Yuşan - Computer Engineer. Mobile and web projects, Kut Labs apps, notes and technical writing.">
+  <link rel="canonical" href="https://metehanyusan.com/">
+
+  <!-- OG / Sosyal Medya Önizleme -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Metehan Yuşan | Bilgisayar Mühendisi">
+  <meta property="og:description" content="Mobil ve web projeleri, Kut Labs uygulamaları, notlar ve teknik yazılar.">
+  <meta property="og:url" content="https://metehanyusan.com/">
+  <!-- YAPILACAK: 1200x630 bir görsel yükleyip aşağıdaki yorumu kaldırın
+  <meta property="og:image" content="https://metehanyusan.com/og-image.png">
+  -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1117'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='700' text-anchor='middle' fill='%232dd4bf'%3EM%3C/text%3E%3C/svg%3E">
+
+  <!-- Arama motorları için kişi bilgisi -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Metehan Yuşan",
+    "url": "https://metehanyusan.com/",
+    "jobTitle": "Computer Engineer",
+    "sameAs": [
+      "https://github.com/metehanyusan",
+      "https://youtube.com/@metehanyusan",
+      "https://medium.com/@myusan3414",
+      "https://www.instagram.com/metehan_yusan",
+      "https://www.linkedin.com/in/metehan-yu%C5%9Fan-26406b252/"
+    ]
+  }
+  </script>
+
+  <script>
+    /* Sadece elle seçilmiş tema kalıcıdır; yoksa sistem temasını izle */
+    (function () {
+      var theme = 'dark';
+      try {
+        var saved = localStorage.getItem('theme');
+        var manual = localStorage.getItem('theme-manual');
+        if (manual && saved) theme = saved;
+        else if (window.matchMedia('(prefers-color-scheme: light)').matches) theme = 'light';
+      } catch (e) {
+        if (window.matchMedia('(prefers-color-scheme: light)').matches) theme = 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SVG İKON SETİ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+      <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+      <symbol id="i-medium" viewBox="0 0 24 24"><circle cx="7.5" cy="12" r="5"/><ellipse cx="16.5" cy="12" rx="2.3" ry="5"/><line x1="21.5" y1="7" x2="21.5" y2="17"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    </defs>
+  </svg>
+
+  <div id="progress"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-logo">Metehan <span>Yuşan</span></div>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#hakkimda" data-tr="Hakkımda" data-en="About">Hakkımda</a>
+          <a href="#yetenekler" data-tr="Yetenekler" data-en="Skills">Yetenekler</a>
+          <a href="#projeler" data-tr="Projeler" data-en="Projects">Projeler</a>
+          <a href="#yazilar" data-tr="Yazılar" data-en="Writing">Yazılar</a>
+          <a href="#iletisim" data-tr="İletişim" data-en="Contact">İletişim</a>
+        </div>
+        <button id="themeBtn" class="icon-btn" aria-label="Temayı değiştir" title="Tema" type="button">☀️</button>
+        <button id="langBtn" class="icon-btn" aria-label="Switch to English" type="button">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- HERO -->
+    <header class="hero" id="top">
+      <h1>Metehan Yuşan</h1>
+      <p class="title" data-tr="Bilgisayar Mühendisi" data-en="Computer Engineer">Bilgisayar Mühendisi</p>
+      <p class="tagline"
+         data-tr="Mobil ve web uygulamaları geliştiriyorum. Fikirleri çalışan ürünlere dönüştürmeyi, öğrendiklerimi de paylaşmayı seviyorum."
+         data-en="I build mobile and web applications. I enjoy turning ideas into working products and sharing what I learn.">
+        Mobil ve web uygulamaları geliştiriyorum. Fikirleri çalışan ürünlere dönüştürmeyi, öğrendiklerimi de paylaşmayı seviyorum.
+      </p>
+      <div class="hero-buttons">
+        <button class="btn btn-primary" id="cvBtn" type="button" aria-haspopup="dialog">
+          <span data-tr="CV İndir" data-en="Download CV">CV İndir</span>
+        </button>
+        <a href="#projeler" class="btn btn-outline" data-tr="Projelerime Bak" data-en="View Projects">Projelerime Bak</a>
+        <a href="#iletisim" class="btn btn-outline" data-tr="İletişime Geç" data-en="Get in Touch">İletişime Geç</a>
+      </div>
+
+      <div class="terminal" aria-hidden="true">
+        <div class="terminal-bar"><i></i><i></i><i></i></div>
+        <div class="terminal-body">
+          <div><span class="prompt">$</span> whoami</div>
+          <div class="out" data-tr="metehan — bilgisayar mühendisi" data-en="metehan — computer engineer">metehan — bilgisayar mühendisi</div>
+          <div><span class="prompt">$</span> stack</div>
+          <div class="out">kotlin · flutter · php · node · linux</div>
+          <div><span class="prompt">$</span> now</div>
+          <div class="out" data-tr="yeni bir mobil uygulama geliştiriliyor" data-en="building a new mobile app">yeni bir mobil uygulama geliştiriliyor</div>
+          <div><span class="prompt">$</span> <span class="cursor"></span></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ÖNE ÇIKAN PROJE (gizli — hazır olunca "hidden" kelimesini silin, metinleri ve görseli doldurun) -->
+    <section id="one-cikan-proje" class="featured-project" hidden>
+      <div class="featured-inner">
+        <div class="featured-content">
+          <span class="featured-badge" data-tr="Öne Çıkan Proje" data-en="Featured Project">Öne Çıkan Proje</span>
+          <h2 class="featured-title" data-tr="Proje Adı Buraya" data-en="Project Name Here">Proje Adı Buraya</h2>
+          <p class="featured-desc" data-tr="Projenin ne işe yaradığını anlatan kısa, çarpıcı bir cümle." data-en="A short, punchy sentence about what your project does.">Projenin ne işe yaradığını anlatan kısa, çarpıcı bir cümle.</p>
+          <ul class="featured-features">
+            <li data-tr="✓ Özellik 1" data-en="✓ Feature 1">✓ Özellik 1</li>
+            <li data-tr="✓ Özellik 2" data-en="✓ Feature 2">✓ Özellik 2</li>
+            <li data-tr="✓ Özellik 3" data-en="✓ Feature 3">✓ Özellik 3</li>
+          </ul>
+          <div class="featured-buttons">
+            <a href="#" class="btn btn-primary" data-tr="Canlı Gör" data-en="View Live">Canlı Gör</a>
+            <a href="#" class="btn btn-outline" data-tr="Detaylar" data-en="Details">Detaylar</a>
+          </div>
+        </div>
+        <div class="featured-visual">
+          <!-- Ekran görüntüsü hazır olunca placeholder'ı silip şunu kullanın:
+          <img src="images/proje.png" alt="Proje ekran görüntüsü" loading="lazy"> -->
+          <div class="featured-placeholder">
+            <svg class="ic" style="width:2.5rem;height:2.5rem" aria-hidden="true"><use href="#i-phone"/></svg>
+            <p data-tr="Ekran görüntüsü buraya" data-en="Screenshot here">Ekran görüntüsü buraya</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HAKKIMDA -->
+    <section id="hakkimda" class="about">
+      <h2 data-tr="Hakkımda" data-en="About Me">Hakkımda</h2>
+
+      <p data-tr="Yazılıma ve teknolojiye olan ilgim, lise yıllarında izlediğim Mr. Robot dizisiyle başladı. Dizide karşılaştığım sistemler ve teknoloji dünyası bende büyük bir merak uyandırdı. Ardından filmler, belgeseller ve videolar aracılığıyla bu alana daha fazla yöneldim. Zamanla gelişen bu merak beni bilgisayar mühendisliğine taşıdı."
+         data-en="My interest in software and technology started with Mr. Robot, which I watched during high school. The systems and the tech world I encountered in the show sparked a deep curiosity in me. Then, through films, documentaries and videos, I gravitated further into this field. Over time, this growing curiosity led me to computer engineering.">
+        Yazılıma ve teknolojiye olan ilgim, lise yıllarında izlediğim Mr. Robot dizisiyle başladı. Dizide karşılaştığım sistemler ve teknoloji dünyası bende büyük bir merak uyandırdı. Ardından filmler, belgeseller ve videolar aracılığıyla bu alana daha fazla yöneldim. Zamanla gelişen bu merak beni bilgisayar mühendisliğine taşıdı.
+      </p>
+
+      <p data-tr="Bugün ağırlıklı olarak mobil ve web uygulamaları geliştiriyorum. Teknolojiyi yalnızca kullanmayı değil, arkasındaki çalışma mantığını anlamayı ve fikirleri çalışan ürünlere dönüştürmeyi önemsiyorum. Kendi projelerimi geliştirmek, sorunlara sade ve işlevsel çözümler üretmek ve teknik açıdan kendimi sürekli ilerletmek temel hedeflerim arasında."
+         data-en="Today I mainly build mobile and web applications. I care not only about using technology but also about understanding how it works under the hood and turning ideas into working products. Developing my own projects, producing simple and functional solutions to problems, and continuously improving myself technically are among my main goals.">
+        Bugün ağırlıklı olarak mobil ve web uygulamaları geliştiriyorum. Teknolojiyi yalnızca kullanmayı değil, arkasındaki çalışma mantığını anlamayı ve fikirleri çalışan ürünlere dönüştürmeyi önemsiyorum. Kendi projelerimi geliştirmek, sorunlara sade ve işlevsel çözümler üretmek ve teknik açıdan kendimi sürekli ilerletmek temel hedeflerim arasında.
+      </p>
+
+      <p data-tr="Teknolojinin dışında Türk tarihi, bilim, ekonomi, askeri tarih ve girişimcilikle ilgileniyorum. Farklı alanlarda okumayı, araştırmayı ve yeni şeyler öğrenmeyi seviyorum. Bir konuyu anlamak için gerektiğinde kaynaklara başvuruyor, farklı görüşleri inceliyor veya doğrudan uygulayarak deneyim kazanıyorum. Edindiğim bilgileri sorgulamayı ve kendi değerlendirmemi oluşturmayı önemsiyorum."
+         data-en="Outside of technology, I'm interested in Turkish history, science, economics, military history and entrepreneurship. I enjoy reading, researching and learning new things across different fields. To understand a subject, I consult sources when needed, examine different views, or gain experience by directly applying it. I value questioning the information I acquire and forming my own assessment.">
+        Teknolojinin dışında Türk tarihi, bilim, ekonomi, askeri tarih ve girişimcilikle ilgileniyorum. Farklı alanlarda okumayı, araştırmayı ve yeni şeyler öğrenmeyi seviyorum. Bir konuyu anlamak için gerektiğinde kaynaklara başvuruyor, farklı görüşleri inceliyor veya doğrudan uygulayarak deneyim kazanıyorum. Edindiğim bilgileri sorgulamayı ve kendi değerlendirmemi oluşturmayı önemsiyorum.
+      </p>
+
+      <p data-tr="Gelecekte uluslararası projelerde yer alan ve teknik çalışmalarıyla değer üreten bir mühendis olmayı hedefliyorum. Aynı zamanda öğrendiklerini paylaşan, araştıran ve kendi fikirlerini geliştiren bir üretici olmak istiyorum. Benim için önemli olan sürekli öğrenmek, üretmek ve ortaya koyduğum işlerle kalıcı bir iz bırakmak."
+         data-en="In the future, I aim to be an engineer who takes part in international projects and creates value through technical work. At the same time, I want to be a maker who shares what I learn, researches, and develops his own ideas. What matters to me is to keep learning, keep producing, and leave a lasting mark through the work I put out.">
+        Gelecekte uluslararası projelerde yer alan ve teknik çalışmalarıyla değer üreten bir mühendis olmayı hedefliyorum. Aynı zamanda öğrendiklerini paylaşan, araştıran ve kendi fikirlerini geliştiren bir üretici olmak istiyorum. Benim için önemli olan sürekli öğrenmek, üretmek ve ortaya koyduğum işlerle kalıcı bir iz bırakmak.
+      </p>
+
+    </section>
+
+    <!-- YETENEKLER -->
+    <section id="yetenekler">
+      <h2 data-tr="Yetenekler &amp; Teknolojiler" data-en="Skills &amp; Technologies">Yetenekler &amp; Teknolojiler</h2>
+      <div class="skill-groups">
+
+        <div class="skill-group">
+          <h3 data-tr="Diller" data-en="Languages">Diller</h3>
+          <div class="badges">
+            <span class="badge">Kotlin</span>
+            <span class="badge">Java</span>
+            <span class="badge">Dart</span>
+            <span class="badge">Python</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 data-tr="Mobil" data-en="Mobile">Mobil</h3>
+          <div class="badges">
+            <span class="badge">Flutter</span>
+            <span class="badge">Android SDK</span>
+            <span class="badge">Play Store</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 data-tr="Web" data-en="Web">Web</h3>
+          <div class="badges">
+            <span class="badge">HTML / CSS</span>
+            <span class="badge">PHP</span>
+            <span class="badge">Node.js</span>
+            <span class="badge">REST API</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 data-tr="Sunucu &amp; DevOps" data-en="Server &amp; DevOps">Sunucu &amp; DevOps</h3>
+          <div class="badges">
+            <span class="badge">Linux</span>
+            <span class="badge">Nginx</span>
+            <span class="badge">SSL / DNS</span>
+            <span class="badge">VPS</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3 data-tr="Araçlar" data-en="Tools">Araçlar</h3>
+          <div class="badges">
+            <span class="badge">Git / GitHub</span>
+            <span class="badge">Android Studio</span>
+            <span class="badge">VS Code</span>
+            <span class="badge">SSH</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJELER -->
+    <section id="projeler">
+      <h2 data-tr="Projeler" data-en="Projects">Projeler</h2>
+      <div class="project-grid">
+
+        <!-- YAPILACAK: Kut Labs'taki her uygulama için bu şablonu kopyalayın
+        <a href="PLAY_STORE_UYGULAMA_LINKI" target="_blank" rel="noopener" class="project-card">
+          <div class="icon"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></div>
+          <h3>Uygulama Adı</h3>
+          <p data-tr="Uygulamanın kısa açıklaması" data-en="Short description of the app">Uygulamanın kısa açıklaması</p>
+          <span class="card-link" data-tr="Play Store'da Gör" data-en="View on Play Store">Play Store'da Gör</span>
+        </a>
+        -->
+
+        <a href="https://play.google.com/store/apps/developer?id=Kut+Labs" target="_blank" rel="noopener" class="project-card">
+          <div class="icon"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></div>
+          <h3 data-tr="Kut Labs Uygulamaları" data-en="Kut Labs Apps">Kut Labs Uygulamaları</h3>
+          <p data-tr="Kut Labs geliştirici hesabıyla Google Play'de yayınladığım mobil uygulamalar."
+             data-en="Mobile apps I publish on Google Play under the Kut Labs developer account.">
+            Kut Labs geliştirici hesabıyla Google Play'de yayınladığım mobil uygulamalar.
+          </p>
+          <span class="card-link" data-tr="Uygulamaları Gör" data-en="View Apps">Uygulamaları Gör</span>
+        </a>
+
+        <a href="https://github.com/metehanyusan" target="_blank" rel="noopener" class="project-card">
+          <div class="icon"><svg class="ic" aria-hidden="true"><use href="#i-github"/></svg></div>
+          <h3 data-tr="Açık Kaynak Çalışmalarım" data-en="My Open Source Work">Açık Kaynak Çalışmalarım</h3>
+          <p data-tr="Açık kaynak projelerim, denemelerim ve katkıda bulunduğum depolar."
+             data-en="My open source projects, experiments and repositories I contribute to.">
+            Açık kaynak projelerim, denemelerim ve katkıda bulunduğum depolar.
+          </p>
+          <span class="card-link" data-tr="GitHub'da Gör" data-en="View on GitHub">GitHub'da Gör</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- YOLCULUK (şimdilik kapalı: açmak için bu yorumu ve sondaki kapanışını silin,
+         menüye de Yolculuk linkini geri ekleyin)
+    <section id="yolculuk">
+      <h2 data-tr="Yolculuğum" data-en="My Journey">Yolculuğum</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="year">2020</div>
+          <h3 data-tr="Mr. Robot ve ilk kod satırları" data-en="Mr. Robot and my first lines of code">
+            Mr. Robot ve ilk kod satırları
+          </h3>
+          <p data-tr="Lisede dizinin etkisiyle yazılıma merak sardım; sistemlerin nasıl çalıştığını öğrenmek için kod yazmaya başladım."
+             data-en="In high school, the show sparked my curiosity about software; I started coding to understand how systems work.">
+            Lisede dizinin etkisiyle yazılıma merak sardım; sistemlerin nasıl çalıştığını öğrenmek için kod yazmaya başladım.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="year">2022</div>
+          <h3 data-tr="İhtiyaçtan doğan ilk projeler" data-en="First projects driven by real needs">
+            İhtiyaçtan doğan ilk projeler
+          </h3>
+          <p data-tr="Web ve mobil tarafta küçük ama gerçek ihtiyaçlara yönelik projeler geliştirmeye başladım."
+             data-en="I started building small but real-need projects on the web and mobile side.">
+            Web ve mobil tarafta küçük ama gerçek ihtiyaçlara yönelik projeler geliştirmeye başladım.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="year">2024</div>
+          <h3 data-tr="Kut Labs ve Play Store" data-en="Kut Labs and the Play Store">
+            Kut Labs ve Play Store
+          </h3>
+          <p data-tr="Kut Labs çatısı altında Google Play'de uygulama yayınlamaya başladım."
+             data-en="I started publishing apps on Google Play under Kut Labs.">
+            Kut Labs çatısı altında Google Play'de uygulama yayınlamaya başladım.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="year">2026</div>
+          <h3 data-tr="Bu site ve paylaşım" data-en="This site and sharing">
+            Bu site ve paylaşım
+          </h3>
+          <p data-tr="Öğrendiklerimi yazıya ve videoya dökmeye, deneyimlerimi burada paylaşmaya başladım."
+             data-en="I started turning what I learn into writing and video, and sharing my experience here.">
+            Öğrendiklerimi yazıya ve videoya dökmeye, deneyimlerimi burada paylaşmaya başladım.
+          </p>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- İSTATİSTİK & SON İÇERİKLER -->
+    <!-- YAPILACAK: Sayılar elle giriliyor (GitHub hariç, o otomatik). Gerçek değerlerle güncelleyin.
+         "Son" satırları gizli; gerçek başlığı yazıp ilgili satırdan hidden kelimesini silin. -->
+    <section id="istatistikler">
+      <h2 data-tr="İstatistikler &amp; Son İçerikler" data-en="Stats &amp; Latest Content">İstatistikler &amp; Son İçerikler</h2>
+      <div class="content-grid">
+
+        <a href="https://github.com/metehanyusan" target="_blank" rel="noopener" class="content-card">
+          <div class="content-head">
+            <span class="content-num" id="gh-count">12</span>
+            <span class="content-label" data-tr="GitHub Deposu" data-en="GitHub Repos">GitHub Deposu</span>
+          </div>
+          <div class="content-latest" hidden>
+            <span class="content-tag" data-tr="Son" data-en="Latest">Son</span>
+            <span class="content-title" id="gh-latest"></span>
+          </div>
+        </a>
+
+        <a href="https://youtube.com/@metehanyusan" target="_blank" rel="noopener" class="content-card">
+          <div class="content-head">
+            <span class="content-num">11</span>
+            <span class="content-label" data-tr="YouTube Videosu" data-en="YouTube Videos">YouTube Videosu</span>
+          </div>
+          <div class="content-latest" hidden>
+            <span class="content-tag" data-tr="Son" data-en="Latest">Son</span>
+            <span class="content-title">Son video başlığı</span>
+          </div>
+        </a>
+
+        <a href="https://medium.com/@myusan3414" target="_blank" rel="noopener" class="content-card">
+          <div class="content-head">
+            <span class="content-num">1</span>
+            <span class="content-label" data-tr="Medium Yazısı" data-en="Medium Posts">Medium Yazısı</span>
+          </div>
+          <div class="content-latest" hidden>
+            <span class="content-tag" data-tr="Son" data-en="Latest">Son</span>
+            <span class="content-title">Son yazı başlığı</span>
+          </div>
+        </a>
+
+        <a href="https://play.google.com/store/apps/developer?id=Kut+Labs" target="_blank" rel="noopener" class="content-card">
+          <div class="content-head">
+            <span class="content-num">1</span>
+            <span class="content-label" data-tr="Play Store Uygulaması" data-en="Play Store Apps">Play Store Uygulaması</span>
+          </div>
+          <div class="content-latest" hidden>
+            <span class="content-tag" data-tr="Son" data-en="Latest">Son</span>
+            <span class="content-title">Son uygulama adı</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- YAZILAR -->
+    <section id="yazilar">
+      <h2 data-tr="Yazılar" data-en="Writing">Yazılar</h2>
+      <p class="section-sub"
+         data-tr="Notlar &amp; Teknik Yazılar — kendi deneyimlerimden ve öğrendiğim teknolojilerden kısa notlar."
+         data-en="Notes &amp; Technical Writing — short notes from my own experience and the technologies I learn.">
+        Notlar &amp; Teknik Yazılar — kendi deneyimlerimden ve öğrendiğim teknolojilerden kısa notlar.
+      </p>
+
+      <div class="post-list">
+        <a href="yazilar/2026-11-16-why-i-built-this-site.html" class="post-item">
+          <div class="post-meta">
+            <span class="post-tag" data-tr="Yazı" data-en="Post">Yazı</span>
+            <span class="post-date" data-tr="16 Kasım 2026" data-en="November 16, 2026">16 Kasım 2026</span>
+          </div>
+          <h3 data-tr="Bu Siteyi Neden Kurguladım?" data-en="Why I Built This Site">
+            Bu Siteyi Neden Kurguladım?
+          </h3>
+          <p data-tr="Kendimi tanıtmak, projelerimi kendi düşüncemle anlatmak ve paylaştıkça bir adım ilerlemek için."
+             data-en="To introduce myself, explain my projects in my own words, and move one step forward with every share.">
+            Kendimi tanıtmak, projelerimi kendi düşüncemle anlatmak ve paylaştıkça bir adım ilerlemek için.
+          </p>
+        </a>
+      </div>
+
+      <div class="section-actions">
+        <a href="yazilar.html" class="btn btn-outline" data-tr="Tüm Yazıları Gör" data-en="View All Posts">Tüm Yazıları Gör</a>
+        <a href="https://medium.com/@myusan3414" target="_blank" rel="noopener" class="btn btn-outline" data-tr="Medium'da Oku" data-en="Read on Medium">Medium'da Oku</a>
+      </div>
+    </section>
+
+    <!-- İLETİŞİM -->
+    <section id="iletisim">
+      <h2 data-tr="İletişim" data-en="Contact">İletişim</h2>
+      <div class="email-box">
+        <a href="mailto:mthnyusan@gmail.com" class="email" data-email-link>
+          <svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>
+          <span data-email-text>mthnyusan@gmail.com</span>
+        </a>
+        <button id="copyBtn" class="btn btn-outline" data-tr="Kopyala" data-en="Copy" onclick="copyEmail()" type="button">Kopyala</button>
+      </div>
+
+      <div class="socials">
+        <a href="https://github.com/metehanyusan" target="_blank" rel="noopener" class="social-link">
+          <svg class="ic" aria-hidden="true"><use href="#i-github"/></svg> <span>GitHub</span>
+        </a>
+        <a href="https://youtube.com/@metehanyusan" target="_blank" rel="noopener" class="social-link">
+          <svg class="ic" aria-hidden="true"><use href="#i-youtube"/></svg> <span>YouTube</span>
+        </a>
+        <a href="https://medium.com/@myusan3414" target="_blank" rel="noopener" class="social-link">
+          <svg class="ic" aria-hidden="true"><use href="#i-medium"/></svg> <span>Medium</span>
+        </a>
+        <a href="https://play.google.com/store/apps/developer?id=Kut+Labs" target="_blank" rel="noopener" class="social-link">
+          <svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg> <span>Play Store</span>
+        </a>
+        <a href="https://www.instagram.com/metehan_yusan" target="_blank" rel="noopener" class="social-link">
+          <svg class="ic" aria-hidden="true"><use href="#i-instagram"/></svg> <span>Instagram</span>
+        </a>
+        <a href="https://www.linkedin.com/in/metehan-yu%C5%9Fan-26406b252/" target="_blank" rel="noopener" class="social-link">
+          <svg class="ic" aria-hidden="true"><use href="#i-linkedin"/></svg> <span>LinkedIn</span>
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2026 Metehan Yuşan ·
+    <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved.">Tüm hakları saklıdır.</span>
+  </footer>
+
+  <button id="toTop" class="icon-btn" aria-label="Yukarı çık" title="Yukarı çık" type="button">↑</button>
+
+  <!-- CV MODAL: önce e-posta, gönderince indirme butonları açılır -->
+  <div id="cvModal" class="modal-overlay" hidden aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="cvModalTitle">
+      <button class="modal-close" id="cvModalClose" aria-label="Kapat" type="button">×</button>
+      <h3 id="cvModalTitle" data-tr="CV İndir" data-en="Download CV">CV İndir</h3>
+
+      <div id="cvFormWrap">
+        <p class="modal-desc" data-tr="CV'yi indirmek için önce e-posta adresini bırak." data-en="Leave your email first to download the CV.">CV'yi indirmek için önce e-posta adresini bırak.</p>
+        <form id="cvForm" novalidate>
+          <input type="email" id="cvEmail" required autocomplete="email" inputmode="email"
+                 placeholder="E-posta adresin"
+                 aria-label="E-posta adresin"
+                 data-tr-placeholder="E-posta adresin"
+                 data-en-placeholder="Your email address">
+          <p class="form-error" id="cvError" role="alert" hidden
+             data-tr="Lütfen geçerli bir e-posta adresi gir." data-en="Please enter a valid email address.">Lütfen geçerli bir e-posta adresi gir.</p>
+          <button type="submit" class="btn btn-primary" data-tr="Devam Et" data-en="Continue">Devam Et</button>
+        </form>
+      </div>
+
+      <div id="cvDownload" hidden>
+        <p class="modal-success" data-tr="Teşekkürler! İşte CV'n:" data-en="Thank you! Here is the CV:">Teşekkürler! İşte CV'n:</p>
+        <div class="modal-downloads">
+          <a href="Metehan_Yusan_CV_TR.pdf" download class="btn btn-primary">🇹🇷 Türkçe CV</a>
+          <a href="Metehan_Yusan_CV_EN.pdf" download class="btn btn-outline">🇬🇧 English CV</a>
+        </div>
+      </div>
+
+      <p class="modal-kvkk"
+         data-tr="E-posta adresin, CV talebini bana iletmek için bir form servisi (FormSubmit) üzerinden gönderilir ve yalnızca seninle iletişim kurmak için kullanılır."
+         data-en="Your email is sent to me through a form service (FormSubmit) to deliver your CV request, and is used only to get in touch with you.">
+        E-posta adresin, CV talebini bana iletmek için bir form servisi (FormSubmit) üzerinden gönderilir ve yalnızca seninle iletişim kurmak için kullanılır.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

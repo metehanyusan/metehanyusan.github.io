@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d1117" id="themeColor">
+
+  <title data-tr="Yazılar | Metehan Yuşan" data-en="Writing | Metehan Yuşan">Yazılar | Metehan Yuşan</title>
+  <meta name="description"
+        content="Metehan Yuşan'ın notları ve teknik yazıları."
+        data-tr-content="Metehan Yuşan'ın notları ve teknik yazıları."
+        data-en-content="Notes and technical writing by Metehan Yuşan.">
+  <link rel="canonical" href="https://metehanyusan.com/yazilar.html">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1117'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='700' text-anchor='middle' fill='%232dd4bf'%3EM%3C/text%3E%3C/svg%3E">
+
+  <script>
+    (function () {
+      var theme = 'dark';
+      try {
+        var saved = localStorage.getItem('theme');
+        var manual = localStorage.getItem('theme-manual');
+        if (manual && saved) theme = saved;
+        else if (window.matchMedia('(prefers-color-scheme: light)').matches) theme = 'light';
+      } catch (e) {
+        if (window.matchMedia('(prefers-color-scheme: light)').matches) theme = 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="progress"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-logo"><a href="index.html" style="color:inherit">Metehan <span>Yuşan</span></a></div>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="index.html#hakkimda" data-tr="Hakkımda" data-en="About">Hakkımda</a>
+          <a href="index.html#yetenekler" data-tr="Yetenekler" data-en="Skills">Yetenekler</a>
+          <a href="index.html#projeler" data-tr="Projeler" data-en="Projects">Projeler</a>
+          <a href="yazilar.html" data-tr="Yazılar" data-en="Writing">Yazılar</a>
+          <a href="index.html#iletisim" data-tr="İletişim" data-en="Contact">İletişim</a>
+        </div>
+        <button id="themeBtn" class="icon-btn" aria-label="Temayı değiştir" title="Tema" type="button">☀️</button>
+        <button id="langBtn" class="icon-btn" aria-label="Switch to English" type="button">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <header class="page-header">
+      <h1 data-tr="Yazılar" data-en="Writing">Yazılar</h1>
+      <p data-tr="Notlar ve teknik yazılar — kendi deneyimlerimden ve öğrendiğim teknolojilerden."
+         data-en="Notes and technical writing — from my own experience and the technologies I learn.">
+        Notlar ve teknik yazılar — kendi deneyimlerimden ve öğrendiğim teknolojilerden.
+      </p>
+    </header>
+
+    <div class="post-list list-bottom">
+
+      <a href="yazilar/2026-11-16-why-i-built-this-site.html" class="post-item">
+        <div class="post-meta">
+          <span class="post-tag" data-tr="Yazı" data-en="Post">Yazı</span>
+          <span class="post-date" data-tr="16 Kasım 2026" data-en="November 16, 2026">16 Kasım 2026</span>
+        </div>
+        <h3 data-tr="Bu Siteyi Neden Kurguladım?" data-en="Why I Built This Site">
+          Bu Siteyi Neden Kurguladım?
+        </h3>
+        <p data-tr="Kendimi tanıtmak, projelerimi kendi düşüncemle anlatmak ve paylaştıkça bir adım ilerlemek için."
+           data-en="To introduce myself, explain my projects in my own words, and move one step forward with every share.">
+          Kendimi tanıtmak, projelerimi kendi düşüncemle anlatmak ve paylaştıkça bir adım ilerlemek için.
+        </p>
+      </a>
+
+      <!-- Yeni yazı eklemek için yukarıdaki kartı kopyalayıp düzenleyin -->
+      <!-- Not örneği:
+      <a href="yazilar/2026-11-23-weekly-note-1.html" class="post-item">
+        <div class="post-meta">
+          <span class="post-tag note" data-tr="Not" data-en="Note">Not</span>
+          <span class="post-date" data-tr="23 Kasım 2026" data-en="November 23, 2026">23 Kasım 2026</span>
+        </div>
+        <h3 data-tr="Bu Hafta: Sunucuda SSL Sorunu" data-en="This Week: SSL Trouble on the Server">Bu Hafta: Sunucuda SSL Sorunu</h3>
+        <p data-tr="Kısa özet..." data-en="Short summary...">Kısa özet...</p>
+      </a>
+      -->
+
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 Metehan Yuşan ·
+    <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved.">Tüm hakları saklıdır.</span>
+  </footer>
+
+  <button id="toTop" class="icon-btn" aria-label="Yukarı çık" title="Yukarı çık" type="button">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
